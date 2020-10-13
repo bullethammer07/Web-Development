@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Entities</title>
+</head>
+<body>
+    <!-- HTML usually ignores any extra whitespaces and replaces them with a single space .... So if we write "Jayant            Yadav", then it will only print "Jayant Yadav" -->
+    <div class="container">
+        <p>This is a                   Paragraph</p> <!-- If you  observe the output on the web browser you will not find any extra whitespaces-->
+        <!-- To add additional whitespaces you need to add "&nbsp" where you want -->
+        <p>This is also a &nbsp; &nbsp; paragraph</p> <!-- If you observe , in places of &nbsp; you will find whitespaces-->
+
+        <!-- HTML has the '<' and the '>' symbols reserved .... But if you want to print them as is, you would need to use HTML entities for it. -->
+        <!-- HTML entities for < is &ly;      and for > is &gt;  -->
+        <p>Printing HTML reserved charaters &lt;p&gt;</p>
+
+        <!-- NOTE : You can browse various names for HTML entity names for special symbols online and use the in your HTML code  -->
+        <!-- for eg : the &pound; entity is used to print the pound symbol for currency -->
+        <p>Printing pound &pound; </p>
+
+    </div>
+
+</body>
+</html>

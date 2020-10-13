@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDs and Classes</title>
+</head>
+<body>
+    <h3>IDs and Classes Tutorial !!....</h3>
+
+    <!-- Impt NOTE : An Element can only have a Unique ID, no two elements shouls have the same ID -->
+    <!-- However an Element can have one or multiple classes associated -->
+    <div id="mainBox" class="redBg blackBorder">
+        This is mainbox
+    </div>
+
+    <!-- . is for class and # is for ID -->
+    <!-- If you type span.<some class name> and press enter for eg span.redBg ..... VS will output a complete span with class=regBg -->
+        <span class="redBg"></span>
+    <!-- You can also cascade multiple classes and they will be taken case of ..... for eg if you type span.hello.class1 .... It will give :  -->
+        <span class="hello class1"></span>
+    <!-- If you do not specify any tags i.e instead of span.some_id , you specify only .some_id , emmet will take <div> by default instead of <span> -->
+        <div class="some_id"></div>
+
+    <!-- If you type span#<some ID name> and press enter for eg span#myid ..... VS will output a complete span with class=regBg -->
+        <span id="myid"></span>
+
+    <!-- Creating multiple elements  -->
+    <!-- You can also creade multiple elements of the same class .... for eg if you type span.some_class.another_class.again_another_class*4 , It will create 4 elements of all the classes specified -->
+    <!-- span.some_class.another_class.again_another_class*4 -->
+    <span class="some_class another_class">first</span>
+    <span class="some_class another_class">second</span>
+    <span class="some_class another_class">third</span>
+    <span class="some_class another_class">fourth</span>
+
+</body>
+</html>

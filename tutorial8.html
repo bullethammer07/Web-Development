@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input tags</title>
+</head>
+
+<body>
+    <h2>This is Forms tutorial</h2>
+    <form action="backend.php">
+        <!-- All form data will be directed to backend.php-->
+        <label for="namelabel">Name : </label> <!-- Label is used for the "for" it is mentioned for"-->
+        <div>
+            <input type="text" name="myName" id=namelabel>
+            <!-- myName is a handle that will give us controllability in the backend-->
+        </div>
+        <div>
+            Email ID : <input type="email" name="myEmail">
+        </div>
+        <div>
+            Do you want to subscribe to newsletter ?. : <input type="checkbox" name="" id="myCheckbox">
+        </div>
+        <div>
+            Gender : Male <input type="radio" name="myGender" id="myRadio"> Female <input type="radio" name="myGender"
+                id="myRadio">
+            <!-- Here you will only be able to select one out of male or female because the "name" attribute is common for both ... -->
+        </div>
+        <!-- Adding area to submit large test -->
+        <div>
+            Areas of Interest : <textarea name="myText" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="car">Car : </label>
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <option value="swf">Swift</option>
+            </select>
+        </div>
+        <!-- Submitting the form  -->
+        <div>
+            <input type="submit" value="Submit Now">
+            <!-- Resetting the form for any arbitrary data added  -->
+            <input type="reset" value="Reset Fields">
+        </div>
+    </form>
+</body>
+
+</html>

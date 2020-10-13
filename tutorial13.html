@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <!-- Adding a Style Sheet :  Can be added by typing link and select the -> "link:css" and press Enter. By default it has style.css which you can change to any of your CSS file -->
+    <link rel="stylesheet" href="jayant.css">
+
+    <!-- Example of Internal CSS -->
+    <!-- NOTE : Here color ORANGE is passed for paragraph <p> , However in Inline CSS in body color RED is passed to paragraph  -->
+    <!-- IMPT : It is important to note here that , Inline CSS will take precedance over Internal CSS -->
+    <style>
+        p {
+            color: orange;
+            background-color: palegreen;
+        }
+        span {
+            color: purple;
+            background-color: saddlebrown;
+        }
+    </style>
+    <!-- NOTE : In above we have both an External CSS and An Internal CSS. There is no precedance between the two. -->
+    <!--        The one that comes after the other takes precedance -->
+    <!-- NOTE : However if you want an attribute to take precedance even if it is not the last in order, add "!important" as part of the attribute. -->
+    <!--        for eg : "background-color: saddlebrown !important;" -->
+
+</head>
+
+<body>
+    <!-- Example of adding Inline CSS -->
+    <p style="color: red; background-color: royalblue;">This tutorial is about HTML / CSS</p>
+    <span>This is Another Paragraph !!.... </span>
+</body>
+
+</html>

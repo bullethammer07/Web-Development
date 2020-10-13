@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+
+    <!-- Font Added from fonts.google  -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        p {
+            /* You can select a particular font type by using the font-family */
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /* font-family: cursive; */
+
+            /* Web Safe Fonts : Fonts that come pre-installed in your OS/Package or Bundle */
+            /* Web Font : Fonts which are not wEB-safe, they have to be imported for use. */
+        }
+
+        /* 
+        You can also stack Fonts :
+         As can be seen below, paragraph with ID : "id1" has font family as 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 
+        This means that you can specify multiple fonts. If the system is unable to find/load the first one, it will jump and prefer the second one, 
+        If not the second, then the third and so on.
+        */
+        #id1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        /* 
+        Web Fonts : They have to be explicitly imported
+        fonts.google.com (Or any other) -> can be preferred to import different fonts
+        Add the link of the style sheet from fonts.google to the code (done above <style>)
+        */
+        #id2 {
+            /* Add the font family from fonts.google */
+            font-family: 'Open Sans', sans-serif;
+            font-size: 40px;
+            line-height: 0.3em; /* This determines the line height. "em" here basically means 'times the parent font size' */
+            font-weight: bold;
+            font-style: italic;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>Fonts Tutorial</h3>
+    
+    <p>Paragraph for Fonts tutorial</p>
+    <p id="id1">This is a separate paagraph with an ID</p>
+    <p id="id2">This is paragraph for imported Font Family</p>
+</html>

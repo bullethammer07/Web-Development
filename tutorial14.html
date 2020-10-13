@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+
+    <!-- We are using Internal CSS here. External CSS can be used as well, however refrain from using Inline CSS.  -->
+    <style>
+        p {
+            color: red;
+            border: 2px solid red; /* This adds border around the paragraph */
+        }
+
+        /* To reference an ID Selector : Use '#'  */
+        /* To reference a Class Selector : Use '.'  */
+        /* Two paragraphs in body below have ID's id1 and id2. You can make a CSS element specific to these two ID's by referring to them using ID selector '#' ... as shown below.  */
+        #id1 {
+            color: blue;
+        }
+        #id2 {
+            color: green;
+        }
+
+        /* However Note that both id1 and id2 have a common class "redbg". We can make a separate CSS element by using Class selecter '.' ... as shown below.  */
+        /* This will set the Background color for both id1 and id2 paragraphs as Red.  */
+        .redbg {
+            background-color: red;
+        }
+
+        /* You can also group two different things and give them common attributes */
+        /* for eg. We have twp span below with different ID's spanid1 and spanid2. We can group both of them as below  */
+        /* This will set the background color to both the IDs with common color.  */
+        #spanid1, #spanid2 {
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Selectors in HTML : -->
+    <!-- 1. CSS Selectors are used to find the element whose property will be set. -->
+    <!-- 2. Selectors are used to target the HTML elements. -->
+    <!-- 3. Selectors makes it easy for us to easily target single/multiple HTML elements in the markup. -->
+
+    <!-- Types of Basic CSS Selectors : -->
+    <!-- 1. CSS Element Selectors -->
+    <!-- 2. CSS ID Selector  -->
+    <!-- 3. CSS Class Selector  -->
+    <!-- 4. CSS Grouping Selector  -->
+
+    <h3>CSS Selectors</h3>
+    <p>Paragraph to demonstrate CSS Selectors</p>
+    <p>This is another paragraph</p>
+
+    <p id="id1" class="redbg">This is paragraph for ID : id1</p>
+    <p id="id2" class="redbg">This is paragraph for ID : id2</p>
+
+    <span id="spanid1">This is paragraph of span 1</span>
+    <span id="spanid2">This is paragraph of span 2</span>
+    
+    
+</body>
+</html>
