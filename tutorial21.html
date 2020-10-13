@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+
+    <!-- Font Added from fonts.google  -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            /* Setting for all */
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            margin: auto;
+            /* Calculates the margin required on both left and right and assumes a value such that the element comes to the centre
+                             This can be used as a method to central align any element (i.e margin: auto;).
+
+                             You can also use -> margin: 33px auto :margin:
+                             This will adjust the margin as 33px from top and auto from left and right.
+                          */
+        }
+
+        .item {
+            border: 3px solid gray;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: #00ffb67d;
+        }
+
+        .heading {
+            text-decoration: underline;
+            /* Underline */
+        }
+
+        /* NOTE : The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. */
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+        }
+
+        #stationery {
+            /* float: left; */
+            clear: both;
+            width: 100%;
+        }
+
+        /* Text Alignment */
+        p {
+            text-align: right;
+            /* You can use whatever alignment you want ..... left,right,center or justify */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="fruits" class="item">
+            <h2 class="heading">Fruits</h2>
+            <p id="fruidid" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates provident,
+                similique blanditiis nobis quasi ullam praesentium quis veniam nam consectetur et mollitia dicta facilis
+                aperiam repellat non qui excepturi laudantium maxime quibusdam in necessitatibus deleniti tenetur!
+                Maiores placeat eligendi deserunt officiis commodi quia! Tenetur, perspiciatis quam! Dolor id ea atque.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti enim animi, fuga dolorum quidem
+                consectetur debitis autem, consequuntur, ullam sapiente eligendi dicta sunt. Placeat quam sunt,
+                veritatis facere ab voluptas?</p>
+        </div>
+        <div id="computer" class="item">
+            <h2 class="heading">Computer</h2>
+            <p id="computerid" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                provident, similique blanditiis nobis quasi ullam praesentium quis veniam nam consectetur et mollitia
+                dicta facilis aperiam repellat non qui excepturi laudantium maxime quibusdam in necessitatibus deleniti
+                tenetur! Maiores placeat eligendi deserunt officiis commodi quia! Tenetur, perspiciatis quam! Dolor id
+                ea atque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti enim animi, fuga dolorum
+                quidem consectetur debitis autem, consequuntur, ullam sapiente eligendi dicta sunt. Placeat quam sunt,
+                veritatis facere ab voluptas? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat placeat
+                sequi, incidunt nisi architecto repellendus possimus modi eveniet. Mollitia, repellendus.</p>
+        </div>
+        <div id="stationery" class="item">
+            <h2 class="heading">Stationery</h2>
+            <p id="stationeryid" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                provident, similique blanditiis nobis quasi ullam praesentium quis veniam nam consectetur et mollitia
+                dicta facilis aperiam repellat non qui excepturi laudantium maxime quibusdam in necessitatibus deleniti
+                tenetur! Maiores placeat eligendi deserunt officiis commodi quia! Tenetur, perspiciatis quam! Dolor id
+                ea atque.</p>
+        </div>
+    </div>
+</body>
+
+</html>
