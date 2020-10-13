@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Links and Buttons and Pseudo Selectors</title>
+
+    <style>
+        .container {
+            border: 2px solid red;
+            background-color: rgb(44, 180, 112);
+            padding: 34px;
+            margin: 34px auto;
+            width: 500px;
+        }
+
+        /* Adding some styling to button .btn class */
+        .btn {
+            background: red;
+            padding: 6px;
+            border: none;
+
+            /* 
+            When you hover over the 'Read More' you will notice that the pointer will change. However when you hover over the 'Contact Us' there is no change in pointer 
+            To make the cursor homogenous for both we have the below attribute "cursor".
+            */
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+
+        }
+        /* Adding specific attributes for the hyperlink a */
+        a {
+            text-decoration: none;
+            color: green;
+        }
+        /* Below is a Pseudo Selector for what happens when you hover on the 'Read More' tab */
+        /* Below attribute is set change text to black on hover and background color to blue*/
+        a:hover, .btn:hover {
+            color: black;
+            background-color: blue;
+            border: 3px solid black;
+        }
+
+        /* If you click on any button once, it is categorized as 'visited'. You can set explicit attributes to links visited, for eg setting the color to some other color  */
+        a:visited {
+            color: blueviolet;
+            background-color: chartreuse;
+        }
+        /* Similar to above another event is the time when you click on the button. You can set explicitly what happens when you press a button  */
+        a:active {
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is a heading</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero id temporibus, minima quaerat quae minus rerum quis distinctio, sunt inventore mollitia voluptas vero consequuntur sequi dignissimos iusto. Laborum voluptates inventore porro et qui facere.</p>
+        <a href="https://google.com" class="btn">Read More</a>
+        <button class="btn">Contact Us</button> <!-- To create a button -->
+    </div>
+</body>
+</html>
