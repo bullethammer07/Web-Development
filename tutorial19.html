@@ -6,12 +6,56 @@
     <title>Borders and Background</title>
 
     <style>
+        #id1 {
+            background-color: red;
+            height: 100px; /* Setting Height of the background */
+            width: 500px; /* Setting Width */
+            border-width: 4px;
+            border-color: blue;
+            border-style: dotted;
+            border-radius: 10px;
 
+        }
+
+        #id2 {
+            background-color: rgb(49, 161, 76);
+            height: 100px; /* Setting Height of the background */
+            width: 500px; /* Setting Width */
+            
+            border-width: 4px;
+            border-top: 4px solid green;
+            border-left: 8px solid green;
+            border-right: 10px solid red;
+            border-bottom: 20px solid yellow;
+
+            border-top-left-radius: 10px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 40px;
+        }
+
+        #id3 {
+            height: 500px; /* Setting Height of the background */
+            width: 1100px; /* Setting Width */
+            background-image: url('/maxpclk.PNG'); /* Adding Local Image in the directory. You can also specify a URL eg url('https:// <some website> /photo.png')
+                                                      By default the Image gets repeated in both the X and Y direction.
+                                                      You can stop that to repeat by specifying either :
+                                                      background-repeat: repeat-x;  (For repeating only in X direction)  or
+                                                      background-repeat: repeat-x;  (For repeating only in Y direction)  or
+                                                      background-repeat: no-repeat; (For no repeating)
+                                                   */
+            background-repeat: no-repeat;
+            background-position: center center; /* Specifying the position of the image ( X-position Y-position) you can also specify in Pixels(px) */
+            border: 10px solid yellow;
+        }
     </style>
 </head>
 <body>
     <h2>Borders and Background</h2>
 
-    <p>Paragraph for borders and Backgrounds</p>
+    <p id="id1">Paragraph for borders and Backgrounds</p>
+    <p id="id2">Paragraph2 for borders and Backgrounds</p>
+    <p id="id3">Paragraph2 for borders and Backgrounds</p>
+
 </body>
 </html>
