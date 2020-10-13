@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Margin and Padding</title>
+
+    <style>
+        /* Universal Selector : Just like you can have properties in CSS for individual ID or class, you can use the Universal selector to give properties to each and every elemeny
+           The Universal Selector is shown below
+        */
+        * {
+            box-sizing: border-box;
+            margin: 0;  /* Given default as zero until unless some other block overrides it*/
+            padding: 0; /* Given default as zero until unless some other block overrides it*/
+        }
+        .container {
+            background-color: yellowgreen;
+            border: 4px solid purple;
+            padding: 20px; /* This adds padding from all sides left,right,top and bottom */
+            margin: 40px; /* This adds margins from all sides left,right,top and bottom*/
+            border-radius: 20px;
+
+            /* 
+            NOTE : You can also custom the padding/margin for either the left,right,top and bottom
+                   using any of the permutation and combination eg
+                   padding-top , padding-bottom , padding-left , padding-right
+
+            NOTE : You can also specify all the padding i.e top right bottom and left in one line itself. eg below : 
+                   padding : 25px 25px 25px 25px;    TOP RIGHT BOTTOM and LEFT Respectively
+            */
+            width: 500px; /* NOTE : If you go to the inspect element and you try to increase the padding, you will notice that the width will also change
+                                    even when we have specified the width here.
+                                    This is because the actual width of any element has the margin and padding and border added.
+
+                                    However if you want the width of an element to be fixed, you can use a property called -> box-sizing (eg. below)
+                                    After setting the box-sizing, if you try to increase the padding in the inspect element screen, you will notice that the width remains
+                                    the same.
+                          */
+            box-sizing: border-box;          
+        }
+
+        body {
+            background-color: sandybrown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is a Heading</h3>
+        <p id="id1"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, aliquid reiciendis sed nihil obcaecati voluptatum blanditiis iure repellat, vitae id facilis consequatur pariatur quo aliquam perferendis molestiae consequuntur deleniti! Fugiat non magnam iste perspiciatis maiores accusantium excepturi esse, neque nesciunt reprehenderit maxime accusamus eos repellendus amet aliquam ipsam eum hic?</p>
+    </div>
+    <div class="container">
+        <h3>This is a Heading</h3>
+        <p id="id2"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, aliquid reiciendis sed nihil obcaecati voluptatum blanditiis iure repellat, vitae id facilis consequatur pariatur quo aliquam perferendis molestiae consequuntur deleniti! Fugiat non magnam iste perspiciatis maiores accusantium excepturi esse, neque nesciunt reprehenderit maxime accusamus eos repellendus amet aliquam ipsam eum hic?</p>
+    </div>
+    <div class="container">
+        <h3>This is a Heading</h3>
+        <p id="id3"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, aliquid reiciendis sed nihil obcaecati voluptatum blanditiis iure repellat, vitae id facilis consequatur pariatur quo aliquam perferendis molestiae consequuntur deleniti! Fugiat non magnam iste perspiciatis maiores accusantium excepturi esse, neque nesciunt reprehenderit maxime accusamus eos repellendus amet aliquam ipsam eum hic?</p>
+    </div>
+</body>
+</html>
