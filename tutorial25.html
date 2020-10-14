@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning in CSS</title>
+
+    <!-- Positions are of the following types : static (default), relative, absolute, fixed , sticky-->
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: khaki;
+            height: 2000px; /*Added large value of height so that we can get a scroll in the browser window */
+        }
+        .box {
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+        }
+
+        #box3 {
+            /* static is a by default position */
+
+            /*-------------------------------------------------------------------------------------------------------------------------*/
+            /* relative positioning*/
+            position: relative; /* If you are using position as relative, you can use the 'top','bottom','left' and 'right' properties */
+                                /* 'relative' can basically be interpretted as new position with respect to the previous original position*/
+            top : 200px;
+            left: 34px;
+        }
+        #box1 {
+            /* ------------------------------------------------------------------------------------------------------------------------*/
+            /* absolute positioning */
+            position: absolute; /* If you are using position as absolute, you can use the 'top','bottom','left' and 'right' properties */
+                                /* 'absolute' can basically be interpretted as new position with respect to the first parents position */
+                                /* for eg. parent of box3 is 'div' of class container, so any positioning will be w.r.t body's psoition */
+            top: 100px;
+            left: 500px;
+            
+        }
+        #box2 {
+            /* ------------------------------------------------------------------------------------------------------------------------*/
+            /* absolute positioning */
+            position: fixed; /* If you are using position as absolute, you can use the 'top','bottom','left' and 'right' properties */
+                             /* 'absolute' can basically be interpretted as new position with respect to the browser windows position */
+                             /* for eg. here position of box2 is kept as 'fixed'. If you scroll the browser window, you will finds that 
+                                the position of box2 remains at the bottom right dur to the attributes set below */
+                            /*NOTE : Such features can be used in implementing Chats on websites */
+            bottom: 5px;
+            right: 4px;
+        }
+        #box4 {
+            /* ------------------------------------------------------------------------------------------------------------------------*/
+            /* sticky positioning */
+            position: sticky; /* If you are using position as absolute, you can use the 'top','bottom','left' and 'right' properties */
+                              /* An element with position: sticky; is positioned based on the user's scroll position. */
+                              /* A sticky element toggles between relative and fixed, depending on the scroll position. 
+                                 It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). */
+                              /* for eg. If you see in the browser, box4 will remain stick to top even when you scroll */
+                              /* NOTE : Such features are used when you need to design a menu that stays even when the user scrolls*/
+            top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Absolute Position Box</div>
+        <div class="box" id="box2">Chat with Us</div>
+        <div class="box" id="box3">Relative position Box</div>
+        <div class="box" id="box4">Sticky Box</div>
+    </div>
+</body>
+</html>
