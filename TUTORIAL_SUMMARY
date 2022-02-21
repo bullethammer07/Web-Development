@@ -38,3 +38,35 @@ Video 5 : https://www.youtube.com/watch?v=ulv_q6-b7uI&list=PLu0W_9lII9agiCUZYRsv
                 Using <br> for line breaks is not a good practice. Instead CSS must be used for this.
     * Horizontal rule <hr>:
         Adds a horizontal line separator where this is specified
+
+Video 6 : https://www.youtube.com/watch?v=z6H22xGAZEA&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=6 [tutorial6_Links_and_Images.html]
+    * 'Anchor' tag <a></a> is used to embed links in your HTML code.
+        this can be used to point towards other links or webpages or other htm pages in the same code.
+        NOTE : When you click on a link it usually opens that link in the same tab. If you want the link to open in a new tab use the
+               "target" attribute of the anchor tag
+    * 'Image' tag <img></img> is used to embed images in your HTML code.
+        NOTE : Use the "alt" attribute to print a message if the image fails to load
+
+Video 7 : https://www.youtube.com/watch?v=N69xumSjg5Q&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=7 [tutorial7_Lists_and_Tables.html]
+    * Use tag <ul></ul> for Unordered List
+    * Use tag <ol></ol> for Ordered List
+    * Use tag <l1></li> for the list item inside <ul> and <ol>
+    * Use the "type" attribute of the <ul> or <ol> to print the ordering type.
+    * NOTE : We can branch <ul> and <ol> inside each other to created more complex lists.
+
+Video 8 : https://www.youtube.com/watch?v=KqJikDzb3l4&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=8 [tutorial8_Forms_and_Input_tags.html]
+    * <form></form> tag can be used to create a form. The "action" attribute points to the backend action that needs to be called when the form is submitted.
+    * <div></div> can be used to create divisions. 
+        NOTE : <div> is a Block Element. There are two types of elements in HTML, Block and Inline.
+                More Infor on block and inline elements here : https://www.w3schools.com/html/html_blocks.asp 
+    * <select></select> can be used to give a drop down choice of values to user to pick from.
+    * <input> tag can be used to take input from the user.
+        "type" attribute values :
+            text
+            email
+            radio    : Radio button
+            checkbox : Check Box
+            submit   : Submit for the form
+            reset    : Reset all filled values in form
+    * <label></label> tag can be used to provide a label explicitly for a specific id
+    * <testarea></textarea> to take a larger taext as input from user
