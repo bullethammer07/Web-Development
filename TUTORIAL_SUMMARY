@@ -1,0 +1,40 @@
+Video 1 : https://www.youtube.com/watch?v=6mbwJ2xhgzM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=1
+    * Introduction
+
+Video 2 : https://www.youtube.com/watch?v=TeZdo8mx0gc&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=2 
+    * Installing VS Code and Live Server from VS Code extensions
+
+Video 3 : https://www.youtube.com/watch?v=IA8JWGP13dI&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=3
+    * Basic structure of a website
+    * Emmet Abbreviation / Boiler Plate (Type '!' at the start of your HTML doc and select first option in VS CODE to insert the boiler plate)
+    * Different types of document a browser supports, we will be using HTML. Thus we use DOCTYPE as HTML
+    * Meta tags
+        description
+        keywords
+        adding external CSS
+    * HTML Comments syntax : <!-- Comment here -->
+
+Video 4 : https://www.youtube.com/watch?v=EZCc_4abdcE&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=4 [tutorial4.html]
+    * "description" and "keywords" meta tags for SEO
+    * "robots" meta tag
+        Setting the content for this metatag as "INDEX, FOLLOW" will make search engines Index and follow your page. Using this your website can be crawled.
+        Setting the content for this metatag as "NOINDEX, NOFOLLOW" will make search engines not Index and not follow your page
+    * Linking External CSS File to HTML file
+        SHORTCUT : type "link" --> choose "link:css"
+    * Linking External JS File to HTML file
+        SHORTCUT : type "script" --> choose "script:src"
+
+Video 5 : https://www.youtube.com/watch?v=ulv_q6-b7uI&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=5 [tutorial5_Heading_and_Pragraphs.html]
+    * Headings -> <h1> <h2> <h3> etc till <h6>
+    * Paragraph -> <p> </p> SHORTCUT : type "p" use <strong></strong> for bold and <em> </em> for Italics
+    * lorem -> to insert random text SHORTCUT : type "lorem" + Enter , this inserts random number of words
+               to add a specified number of words use -> lorem<num> eg. lorem100. This will insert 100 words
+    * Inserting multiple tags, for eg, we need to insert 4 paragraph <p></p> tags
+        SHORTCUT : type "p*4" + Enter
+        NOTE : this is also applicable for other tags. for eg. "h1*4" will insert 4 heading tags.
+    * Line Break <br>: 
+        Extra spaces are ignored in HTML. If you require extra line breaks then use the <br> tag
+        NOTE : <br> is a self closing tag and does not need </br> for closing
+                Using <br> for line breaks is not a good practice. Instead CSS must be used for this.
+    * Horizontal rule <hr>:
+        Adds a horizontal line separator where this is specified
