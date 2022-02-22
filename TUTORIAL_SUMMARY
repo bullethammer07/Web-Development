@@ -72,3 +72,9 @@ Video 8 : https://www.youtube.com/watch?v=KqJikDzb3l4&list=PLu0W_9lII9agiCUZYRsv
     * <testarea></textarea> to take a larger taext as input from user
 
 Video 9 : https://www.youtube.com/watch?v=DFT9qxVCF6k&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=9 [tutorial9_Inline_and_Block_elements.html]
+    * Block Elements are elemnts that take up the entire block of line. For eg <p> and <div> are Block Elements
+    * Inline Elements are elemnts that take up only the space they require. For eg <span></span> is Inline Element.
+
+Video 10 : https://www.youtube.com/watch?v=BucLTOfLQsk&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=10 [tutorial10_IDs_and_classes.html]
+    * SHORTCUT : . is for class and # is for ID
+        for eg : If you type span.<some class name> and press enter for eg span.redBg ..... VS will output a complete span with class=regBg
