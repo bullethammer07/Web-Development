@@ -78,3 +78,14 @@ Video 9 : https://www.youtube.com/watch?v=DFT9qxVCF6k&list=PLu0W_9lII9agiCUZYRsv
 Video 10 : https://www.youtube.com/watch?v=BucLTOfLQsk&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=10 [tutorial10_IDs_and_classes.html]
     * SHORTCUT : . is for class and # is for ID
         for eg : If you type span.<some class name> and press enter for eg span.redBg ..... VS will output a complete span with class=regBg
+
+Video 11 : https://www.youtube.com/watch?v=gw1efv5WF_Q&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=11 [tutorial11_HTML_Entities.html]
+    * Extra Spaces are ignored in HTML to add extra spaces use &nbsp;
+    * '<' and '>' are reserved characters HTML. Instead use &lt; and &gt; respectively.
+    * There are other HTML entities that you can browse separately.
+
+Video 12 : https://www.youtube.com/watch?v=FKfsmV6otEM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=12 [tutorial12_Semantic_Tags.html]
+    * From a SEO stand point it is important that you classify or label your HTML components with specific tags.
+    * these tags help the search engine to better index your page.
+        for eg. there are specific tags such as <header> <footer> <section> <nav> <aside> etc that can be used specifically while creating your website.
+        refer page for mode details : https://developer.mozilla.org/en-US/docs/Glossary/Semantics
