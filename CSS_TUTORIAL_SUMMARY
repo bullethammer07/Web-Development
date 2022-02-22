@@ -3,3 +3,11 @@ Video 13 : https://www.youtube.com/watch?v=ua24185-rcw&list=PLu0W_9lII9agiCUZYRs
         1. Inline CSS   : The style attribute is specified in line on the tag itself.
         2. Internal CSS : here the CSS is kept inside the <head> tags inside <style> tags 
         3. External CSS : CSS is kept separately inside a .css file and sourced using anchor tags.
+
+Video 14 : https://www.youtube.com/watch?v=ArUL-He_AN0&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=14 [tutorial14_selectors_in_CSS.html]
+    * Some commonly used CSS properties are mentioned here : https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference
+    * NOTE : Inline CSS is given precedence over Internal CSS.
+    * NOTE : The code specified last takes precedence between Internal and External CSS.
+        to override this rule use the "!important" attribute for the property you want to take more precedance.
+    * External CSS can be sourced to your HTML code using <link>
+        eg. <link rel="stylesheet" href="jayant.css">
