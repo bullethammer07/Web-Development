@@ -1,0 +1,5 @@
+Video 13 : https://www.youtube.com/watch?v=ua24185-rcw&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=13 [tutorial13_CSS_Basics.html]
+    * Introduction to CSS. CSS can be embedded in three types inside your HTML code.
+        1. Inline CSS   : The style attribute is specified in line on the tag itself.
+        2. Internal CSS : here the CSS is kept inside the <head> tags inside <style> tags 
+        3. External CSS : CSS is kept separately inside a .css file and sourced using anchor tags.
