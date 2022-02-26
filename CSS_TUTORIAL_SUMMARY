@@ -55,5 +55,8 @@ Video 21 : https://www.youtube.com/watch?v=6G42rXal5-g&list=PLu0W_9lII9agiCUZYRs
     * The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it.
         float: left;
         float: right;
-
+        clear: left;
+        clear: right;
+        clear: both;
+        
 Video 22 : https://www.youtube.com/watch?v=6G42rXal5-g&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=22 [tutorial22_styling_links_and_buttons.html]
