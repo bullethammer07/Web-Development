@@ -29,20 +29,31 @@ Video 16 : https://www.youtube.com/watch?v=buxedopZbKM&list=PLu0W_9lII9agiCUZYRs
     * Your webage content can be viewed in a more detailed fashion for debug and tweak using the "Inspect" in your browser.
 
 Video 17 : https://www.youtube.com/watch?v=buxedopZbKM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=17 [tutorial17_fonts.html]
-    * Some common attributes :
-        font-family
-        font-size
-        line-height
-        font-weight
-        font-style
-    * Fonts can be imported from Google Fonts by copying and pasting the link
 
 Video 18 : https://www.youtube.com/watch?v=buxedopZbKM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=18 [tutorial18_colors.html]
-    * Colors can be represented by 
-        name eg. 'red'
-        rgb  eg. rgb(10,20,30)
-        hex  eg. #aabbff
 
 Video 19 : https://www.youtube.com/watch?v=buxedopZbKM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=19 [tutorial19_borders_and_background.html]
+    * Few border attributes
+        border-width
+        border-color
+        border-style
+            or instead for specifying above three separately, you can club all three in one and specify as -> border: 2px solis green;
+        border-radius
+    * Background related attributes
+        background-image
+        background-repeat -> To stop image from repeating
+        background-position
 
 Video 20 : https://www.youtube.com/watch?v=buxedopZbKM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=20 [tutorial20_CSS_box_model_margin_and_padding.html]
+    * CSS Box Model : Remember MBP as a shorthand (From outside to inside) Margin Border Padding
+        These can be selected using attributes : 'margin', 'border', 'padding'
+    * box-sizing : Refer to inline comments in  code
+    * Universal selectoe : *{  } // Attributes specified here are applied to all
+
+Video 21 : https://www.youtube.com/watch?v=6G42rXal5-g&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=21 [tutorial21_Alignment.html]
+    * To centralize any container/div use -> margin: auto;
+    * The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it.
+        float: left;
+        float: right;
+
+Video 22 : https://www.youtube.com/watch?v=6G42rXal5-g&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=22 [tutorial22_styling_links_and_buttons.html]
