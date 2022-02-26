@@ -29,8 +29,19 @@ Video 16 : https://www.youtube.com/watch?v=buxedopZbKM&list=PLu0W_9lII9agiCUZYRs
     * Your webage content can be viewed in a more detailed fashion for debug and tweak using the "Inspect" in your browser.
 
 Video 17 : https://www.youtube.com/watch?v=buxedopZbKM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=17 [tutorial17_fonts.html]
+    * Some common attributes :
+        font-family
+        font-size
+        line-height
+        font-weight
+        font-style
+    * Fonts can be imported from Google Fonts by copying and pasting the link
 
 Video 18 : https://www.youtube.com/watch?v=buxedopZbKM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=18 [tutorial18_colors.html]
+    * Colors can be represented by 
+        name eg. 'red'
+        rgb  eg. rgb(10,20,30)
+        hex  eg. #aabbff
 
 Video 19 : https://www.youtube.com/watch?v=buxedopZbKM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=19 [tutorial19_borders_and_background.html]
 
