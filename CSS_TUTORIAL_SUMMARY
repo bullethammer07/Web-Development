@@ -70,3 +70,15 @@ Video 23 : https://www.youtube.com/watch?v=6G42rXal5-g&list=PLu0W_9lII9agiCUZYRs
     * We can target specific casses or ids in a DM hierarchy, for eg in code if you want to target 'li' inside 'ul' inside 'navbar', then you can use CSS:
         .navbar ul li { <attributes here> }
     * NOTE : This is a basic tutorial on how to basically create a Navbar. We however will be picking Navbar mostly from Bootstrap.
+
+Video 24 : https://www.youtube.com/watch?v=6G42rXal5-g&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=24 [tutorial24_CSS_display_property.html]
+    * We can assign the behavior of a element to be inline or block using the 'display' attribute
+        display: block; -> Sets the element as a block element
+        display: inline-block; -> Sets the element as an inline element
+
+Video 25 : https://www.youtube.com/watch?v=6G42rXal5-g&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=25 [tutorial25_positioning_in_html.html]
+    * Types of positionings in CSS
+        Fixed
+        Absolute
+        Relative (relative to its original position)
+        Sticky
