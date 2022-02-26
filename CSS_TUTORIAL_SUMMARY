@@ -11,3 +11,27 @@ Video 14 : https://www.youtube.com/watch?v=ArUL-He_AN0&list=PLu0W_9lII9agiCUZYRs
         to override this rule use the "!important" attribute for the property you want to take more precedance.
     * External CSS can be sourced to your HTML code using <link>
         eg. <link rel="stylesheet" href="jayant.css">
+
+Video 15 : https://www.youtube.com/watch?v=oPPym7UaSIo&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=15 [tutorial14_selectors_in_CSS.html]
+    * Types of CSS Selectors
+        CSS element selector
+        CSS id selector (referenced by #)
+        CSS Class selector (referenced by .)
+        CSS grouping selector (Groups of classes and IDs)
+    * Some common CSS attributes :
+        color
+        border
+        border-radius
+        background-color
+        font-style
+
+Video 16 : https://www.youtube.com/watch?v=buxedopZbKM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=16 [tutorial16_chrome_developer_tools.html]
+    * Your webage content can be viewed in a more detailed fashion for debug and tweak using the "Inspect" in your browser.
+
+Video 17 : https://www.youtube.com/watch?v=buxedopZbKM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=17 [tutorial17_fonts.html]
+
+Video 18 : https://www.youtube.com/watch?v=buxedopZbKM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=18 [tutorial18_colors.html]
+
+Video 19 : https://www.youtube.com/watch?v=buxedopZbKM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=19 [tutorial19_borders_and_background.html]
+
+Video 20 : https://www.youtube.com/watch?v=buxedopZbKM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=20 [tutorial20_CSS_box_model_margin_and_padding.html]
