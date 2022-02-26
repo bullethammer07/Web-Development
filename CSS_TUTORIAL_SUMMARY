@@ -58,5 +58,15 @@ Video 21 : https://www.youtube.com/watch?v=6G42rXal5-g&list=PLu0W_9lII9agiCUZYRs
         clear: left;
         clear: right;
         clear: both;
-        
+
 Video 22 : https://www.youtube.com/watch?v=6G42rXal5-g&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=22 [tutorial22_styling_links_and_buttons.html]
+    * Use 'button' tag to create a button
+    * Some pseudo selectors for botton (Refer to functionality in code)
+        :hover
+        :visited
+        :active
+
+Video 23 : https://www.youtube.com/watch?v=6G42rXal5-g&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=23 [tutorial23_creating_a_navigation_menu.html]
+    * We can target specific casses or ids in a DM hierarchy, for eg in code if you want to target 'li' inside 'ul' inside 'navbar', then you can use CSS:
+        .navbar ul li { <attributes here> }
+    * NOTE : This is a basic tutorial on how to basically create a Navbar. We however will be picking Navbar mostly from Bootstrap.
