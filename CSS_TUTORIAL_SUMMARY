@@ -82,3 +82,14 @@ Video 25 : https://www.youtube.com/watch?v=6G42rXal5-g&list=PLu0W_9lII9agiCUZYRs
         Absolute
         Relative (relative to its original position)
         Sticky
+
+Video 26 : https://www.youtube.com/watch?v=Sj5NX_br5WY&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=26 [Folder : CWH_Gym_website_design]
+
+Video 27 : https://www.youtube.com/watch?v=Uzuq2FGxgK4&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=27 [tutorial27_visibility_property_and_z_index.html]
+    * We have an attribute called 'visibility' for components
+        usage : visibility : <values>;
+        The default value for 'visibility' is : 'visible'
+    * z-index : For any reason if a component overlaps over another component, then which element will be visible over the top ?
+        this is specified by the "z-index" attribute
+            NOTE : z-index works only for positioned elements. i.e. if its absolute, relative, fixed or sticky
+                   If the position is set to 'fixed', then the z-index attribute will not work.

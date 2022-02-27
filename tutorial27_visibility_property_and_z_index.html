@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-Index</title>
+
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+
+        #box1{ background-color: red; }
+        #box2{ 
+            background-color: blue; 
+            /* visibility: visible; This is default value, No need to specify this explicitly*/ 
+            /* Visibility can also be set to : hidden, to hide the component */
+
+
+            visibility: hidden; /* NOTE : This only hides the elemnt but the element still occuppies all the space that it is entitled to */
+                                /*        to remove the space occupied by the component altogether as well, use : display : none;*/
+            display: none; /*This will remove box2 */
+        }
+
+        /* 
+        -------------------------------------------------------------------------------------------------------------------------
+        THEORY FOR Z-INDEX
+        
+        For any reason if a component overlaps over another component, then which element will be visible over the top ?
+        this is specified by the "z-index" attribute
+            NOTE : z-index works only for positioned elements. i.e. if its absolute, relative, fixed or sticky
+                   If the position is set to 'fixed', then the z-index attribute will not work.
+        
+         ------------------------------------------------------------------------------------------------------------------------- 
+         */
+
+        /* To start with z-index, we will first set the position for both below boxes to relative */
+        /* Then we will move their positions by certain pixels from top , this will make box4 overlap over box3 */
+        /* If we want to have box3 overlap over box4, then we will need to specify a z-index for box3 with is > z-index for box4 */
+        #box3{ 
+            background-color: green; 
+            top: 150px;
+            position: relative;
+            z-index: 2;
+        }
+        #box4{ 
+            background-color: yellow; 
+            top: 100px;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Below is a way to make div's or any component with ID's with incremental name 
+        For eg. If you wish to have 4 div tags with individual ID's as box1, box2, box3 and box4 and so on :
+        then you can use the below shorthand
+            div.box#box$*4
+                This will create 4 div tags with class as "box" and with incremental ID's
+     -->
+     <div class="box" id="box1"></div>
+     <div class="box" id="box2"></div>
+     <div class="box" id="box3"></div>
+     <div class="box" id="box4"></div>
+
+    
+</body>
+</html>
