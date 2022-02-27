@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayants Fitness</title>
+</head>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<!-- Linking the CSS file -->
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/abs-1850926_1920.jpg');
+        color: white;
+        height: 3000px;
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid red;
+    }
+
+    .left img {
+        filter: invert(100%);
+        width: 150px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 36%;
+        margin: 20px auto;
+        border: 2px solid green;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid yellow;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 3px 4px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+    }
+    .btn:hover {
+        background-color: rgb(74, 73, 73);
+    }
+    .container {
+        border: 2px solid green;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left Box for logo -->
+        <div class="left">
+            <img src="img/fitness.png" alt="">
+            <div>
+                Jayants Fitness
+            </div>
+        </div>
+        <!-- Mid Box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"">Home</a></li>
+                <li><a href=" #"">About US</a></li>
+                <li><a href="#"">Fitness Center</a></li>
+                <li><a href=" #"">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+
+    </div>
+</body>
+
+</html>
