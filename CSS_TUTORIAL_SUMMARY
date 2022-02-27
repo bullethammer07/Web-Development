@@ -64,7 +64,7 @@ Video 22 : https://www.youtube.com/watch?v=6G42rXal5-g&list=PLu0W_9lII9agiCUZYRs
     * Some pseudo selectors for botton (Refer to functionality in code)
         :hover
         :visited
-        :active
+        :active`
 
 Video 23 : https://www.youtube.com/watch?v=6G42rXal5-g&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=23 [tutorial23_creating_a_navigation_menu.html]
     * We can target specific casses or ids in a DM hierarchy, for eg in code if you want to target 'li' inside 'ul' inside 'navbar', then you can use CSS:
