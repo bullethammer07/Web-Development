@@ -93,3 +93,43 @@ Video 27 : https://www.youtube.com/watch?v=Uzuq2FGxgK4&list=PLu0W_9lII9agiCUZYRs
         this is specified by the "z-index" attribute
             NOTE : z-index works only for positioned elements. i.e. if its absolute, relative, fixed or sticky
                    If the position is set to 'fixed', then the z-index attribute will not work.
+
+Video 28 : https://www.youtube.com/watch?v=Uzuq2FGxgK4&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=28 [tutorial28_flexbox.html]
+    * Flexbox is a VERY Important thing while designing layouts in HTML.
+    * Flexbox is a one-dimensional layout method for laying out items in rows and columns.
+    * CSS flexbox is a better way to align items into a container.
+    * To make a container as a flexbox, we need to set its 'display' attribute as "flex".
+        NOTE : All items inside a flexbox become flex items.
+    * Flex Properties for a flex container :
+        flex-direction : row; -> Makes all flex items span in a row. This is by DEFAULT
+        flex-direction : column; -> Makes all flex items span in a colums
+        flex-direction : row-reverse; -> Makes the flexbox start filling from reverse i.e right side
+        flex-direction : column-reverse; -> Makes the flexbox start filling from reverse i.e from bottom
+        * To make all the items inside the container wrap when the scren width is reducted, we can use 'flex-wrap' :
+            flex-wrap : wrap;
+            flex-wrap : wrap-reverse;
+        * NOTE : we can combine flex-direction and flex-wrap with a single attribute called 'flex-flow'
+            flex-flow : row-reverse wrap;
+        * To center the entire content :
+            justify-content : center; // All items are aligned in center
+            justify-content : space-between; // All items are aligned with spaces between them
+            justify-content : space-evenly; // All items are aligned with spaces between them including start and end spaces
+            justify-content : space-around; // Items have the same space at their individual left and right
+
+            align-items : center; // Aligns all items at the center vertically
+            align-items : flex-end; // Aligns all items at the bottom of the container
+            align-items : flex-start; // DEFAULT Value Aligns all items at the top of the container
+            align-items : stretch;
+    * Flex Properties for a flex Item :
+        order : <some integer value>; Just like z-index, the item with the highest value of 'order' will be places at the end
+                Higher the order, the later it shows up in the container.
+        flex-grow : <some +ve integrervalue>; This property specifies how much of the remaining space in the flex container should be assigned to the item (the flex grow factor).
+        flex-shrink : <some +ve integrervalue>; Works the same way as flex-grow, instead now it is used when the screen width is shrunk. When the screen width is reduced the container
+                        with the highest value is shrunk more in proportion.
+        flex-basis : <Some width in px>; When 'flex-direction' is set to row, flex-basis controls the width.
+                                         When 'flex-direction' is set to column, flex-basis controls the height.
+        NOTE : All the above three flex options ca be specified in a single line using the 'flex' attribute eg. :
+            flex : 2 2 300px;
+        align-self : <flex-start | flex-center | flex-end>;
+            aligns the item at the start, center or end of the flex item respectively as per the value passed.
+

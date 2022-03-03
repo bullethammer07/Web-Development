@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+
+    <style>
+        .container {
+            height: 1500px;
+            width: 100%;
+            border: 1px solid black;
+            /* To make this container a FLEXBOX, we need to set its display attribute to 'flex'  */
+            display: flex;
+
+            /* ----------------------------------------------------------------------------------- */
+            /*                           Flex properties for container  */
+            /* ----------------------------------------------------------------------------------- */
+            /* UNCOMMENT BELOW FUNCTIONALITY TO RUN */
+            /* flex-direction: row;  */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse;  */
+            /* flex-direction: column-reverse; */
+            
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            
+            /* flex-flow: row-reverse wrap; */
+            
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+
+            /* ----------------------------------------------------------------------------------- */
+            /*                           Flex properties for Item  */
+            /* ----------------------------------------------------------------------------------- */
+
+            align-items: center;
+        }
+        
+        .item {
+            background-color: tomato;
+            border: 1px solid black;
+            margin: 10px;
+            padding: 2px;
+            width: 200px;
+            height: 200px;
+        }
+
+        /* Making CSS for Individual Items */
+        #item-1 {
+            /* order: 2; */
+            flex-grow: 3; 
+            flex-shrink: 2;
+        }
+        #item-2 {
+            flex-grow: 2; 
+            flex-shrink: 3;
+            flex-basis: 400px;
+            
+        }
+        #item-3 {
+            /* order: 1; */
+
+        }
+        #item-4 {
+
+        }
+        #item-5 {
+
+        }
+        #item-6 {
+
+        }
+    </style>
+</head>
+<body>
+    <h2>This is FLEXBOX tutorial</h2>
+    <!-- Making a container with multiple containers inside it  -->
+    <div class="container">
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+    </div>
+
+</body>
+</html>
