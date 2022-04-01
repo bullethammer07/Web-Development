@@ -133,3 +133,10 @@ Video 28 : https://www.youtube.com/watch?v=Uzuq2FGxgK4&list=PLu0W_9lII9agiCUZYRs
         align-self : <flex-start | flex-center | flex-end>;
             aligns the item at the start, center or end of the flex item respectively as per the value passed.
 
+Video 29 : https://www.youtube.com/watch?v=Uzuq2FGxgK4&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=29 [tutorial29_responsive_design.html]
+    * Various ways to achieve responsive design
+        1. setting up the viewport
+        2. use max-width/max-height
+        3. Using CSS Media Queries : Add On designing which we give to certain special elements, whenever the screen resizes.
+                                    i.e new CSS is injected whenever the screen resizes.
+        Using rem/vh/vw units over pixels
