@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and nth child pseudo selectors</title>
+
+    <style>
+        .container {
+            margin: 34px 23ps;
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+
+        input {
+            display: block;
+        }
+
+        input[type='text'] { /* This property will only be applicable for input element with type=text */
+            padding : 23px;
+            border : 2px solid red;
+        }
+
+        a[target] { /* Selecting an anchor whose 'target is set' */
+            font-size: 34px;
+            color: violet;
+        }
+
+        a[target='_self'] { /* Selecting an anchor whose 'target is set to some value' */
+            font-size: 34px;
+            color: blue;
+        }
+
+        /* Pseudo selector for <input> tag with type as 'email' */
+        input[type='email'] {
+            background-color: aqua;
+        }
+
+        /* Usage of nth child pseudo selector  */
+        li:nth-child(3) {
+            background-color: green;
+        }
+
+        /* Usage of nth-child(odd) */
+        li:nth-child(odd) {
+            background-color : cyan;
+        }
+        /* Usage of nth-child(even) */
+        li:nth-child(even) {
+            background-color : greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <a href="http://www.google.com" target="_blank">Go to google homepage !!...</a>
+            <a href="http://www.facebook.com" target="_self">Go to facebook homepage !!...</a>
+        </h1>
+
+        <!-- Adding a form -->
+        <form action="" class="form-control">
+            <input type="text" placeholder="Exter your Name">
+            <input type="email" placeholder="Exter your E-Mail ID">
+            <input type="password" placeholder="Exter your Password">
+            <input type="submit" value="Submit">
+            
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item 1</li>
+            <li class="item" id="item-2">Item 3</li>
+            <li class="item" id="item-3">Item 3</li>
+            <li class="item" id="item-4">Item 4</li>
+            <li class="item" id="item-5">Item 5</li>
+            <li class="item" id="item-6">Item 6</li>
+        </ul>
+    </div>
+</body>
+</html>

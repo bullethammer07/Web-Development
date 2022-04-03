@@ -244,3 +244,43 @@ Video 31 : https://www.youtube.com/watch?v=WwUM7qOimbo&list=PLu0W_9lII9agiCUZYRs
                         // Which here is P4
 
             }
+
+        3. To select a particular element which is specifically next to another element (its sibling).
+
+Video 32 : https://www.youtube.com/watch?v=P-hZDC5YkJE&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=32 [tutorial32_attributes_and_nth_child_pseudo_selectors.html]
+    1. Pseudo selectors are used to select a particular element whose specific attribute of interest is set.
+        For eg :
+            Assume there is a <input> tag whose type attribute is set as 'text', how can we select such an element .
+            for this we have pseudo selectors.
+
+            Such an element can be targetted using pseudo selctors as :
+                input[type='text'] {
+
+                }
+    2. nth child pseudo selectos : Selecting the nth child inside an element.
+        For eg : 
+            In the code there is a <ul> tag that has 6 <li> tags inside it. Now how to select a specific index, say 3rd <li> tag ?
+            We can do this by using the nth child pseudo selector.
+
+            li:nth-child(3) { // Selects the child at index 3 for the element <li>
+                <attributes to set>
+            }
+
+        What if we want a periodic assignment of the childs ?. For eg. we want every third child to be selected. For this we can assign formula to the nth-child pseudo selector
+        For eg:
+            li:nth-child(3n+0) { // Selects the child at every 3rd for the element <li> consecutively
+                                 // HTML iterates the value of n from 1
+                <attributes to set>
+            }
+
+        Similarly we can select evet odd or even child using 'odd' or 'even' as parameter in the nth-child attribute :
+            Usage :
+                li:nth-child(odd) {
+                    
+                }
+
+                li:nth-child(even) {
+
+                }
+
+
