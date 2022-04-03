@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+
+<style>
+    .box {
+        font-size  :60px;
+        text-align: center;
+        background-color : red;
+        color: white;
+
+        /* Keep the display as : none by default for the sake of explanation, this will keep the box at no display at default  */
+        display : none;
+    }
+
+    @media only screen and (max-width : 300px) { /* This query will become active when max-width reaches 500px, and all attribute within this query will be active */
+                                 /* NOTE : For this query we will specifically target the addributes for a particular id : say 'box-1'*/
+        #box-1 {
+            display: block; /* The default display for the box is none. But when this media query hits the box will come into display */
+            background-color : blue;
+        }
+    }
+    
+    /* Making another media query in a similar way */
+    @media only screen and (max-width:800px) and (min-width:300px) { /* Here we have clubbed two different conditions to hold true for this query to hit */
+        #box-2 {
+            display : block; /* The default display for the box is none. But when this media query hits the box will come into display */
+            background-color : green;
+        }
+    }
+    
+    /* Making another media query in a similar way */
+    @media only screen and (max-width:1200px) and (min-width:800px) { /* Here we have clubbed two different conditions to hold true for this query to hit */
+        #box-3 {
+            display : block; /* The default display for the box is none. But when this media query hits the box will come into display */
+            background-color : greenyellow;
+        }
+        
+    }
+    /* Making another media query in a similar way */
+    @media only screen and (min-width:1200px) { /* Here we have single condition for min-width to hold true for this query to hit */
+        #box-4 {
+            display : block; /* The default display for the box is none. But when this media query hits the box will come into display */
+            background-color : pink;
+        }
+    }
+
+</style>
+
+<body>
+    <div class="box" id="box-1">This is an iPhone screen</div>
+    <div class="box" id="box-2">This is a TABLET screen</div>
+    <div class="box" id="box-3">This is a NORMAL computer screen</div>
+    <div class="box" id="box-4">This is a WIDESCREEN monitor screen</div>
+</body>
+</html>

@@ -162,3 +162,44 @@ Video 29 : https://www.youtube.com/watch?v=Uzuq2FGxgK4&list=PLu0W_9lII9agiCUZYRs
             for eg.
                 100vh : means 100% of the viewport height.
                 80vw  : means 80% of the viewport width.
+
+Video 30 : https://www.youtube.com/watch?v=WTz4A8IdeEQ&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=30 [tutorial30_media_queries.html]
+    Media Queries is a way to create responsive design for your website.
+    Basically it is telling your design to do something particular, like inserting some CSS, when the screen width raches a particular size.
+
+    Media query can be inserted into the CSS by using keyword '@media'
+    Usage :
+        With single condition :
+
+            @media (<Situation to check for true>)
+            {
+                #<id of object/objects to assign active attributes to> {
+                <Set of attributes that will hold active when the 'Situation' holds true>
+                }
+
+                .<classes of object/objects to assign active attributes to> {
+                <Set of attributes that will hold active when the 'Situation' holds true>
+                }
+            }
+        
+        With multiple comditions :
+            @media (<Situation to check for true>) and (<Another Situation to check for true>)
+            {
+                #<id of object/objects to assign active attributes to> {
+                <Set of attributes that will hold active when the 'Situation' holds true>
+                }
+
+                .<classes of object/objects to assign active attributes to> {
+                <Set of attributes that will hold active when the 'Situation' holds true>
+                }
+            }
+
+    Media Types is CSS :
+        CSS recognizes multiple media types, such as 'print', 'screen' , 'braille' etc. More info can be  found here : https://www.w3.org/TR/CSS21/media.html%23media-types
+        But for normal responsive design, the only Media Type that is important to us is 'screen'
+
+        Thus we can have our media queries designated specifically for screens.
+        For eg :
+            @media only screen and (<Situation to check for true>) {
+
+            }
