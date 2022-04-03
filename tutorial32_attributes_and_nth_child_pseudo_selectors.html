@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,17 +19,20 @@
             display: block;
         }
 
-        input[type='text'] { /* This property will only be applicable for input element with type=text */
-            padding : 23px;
-            border : 2px solid red;
+        input[type='text'] {
+            /* This property will only be applicable for input element with type=text */
+            padding: 23px;
+            border: 2px solid red;
         }
 
-        a[target] { /* Selecting an anchor whose 'target is set' */
+        a[target] {
+            /* Selecting an anchor whose 'target is set' */
             font-size: 34px;
             color: violet;
         }
 
-        a[target='_self'] { /* Selecting an anchor whose 'target is set to some value' */
+        a[target='_self'] {
+            /* Selecting an anchor whose 'target is set to some value' */
             font-size: 34px;
             color: blue;
         }
@@ -45,14 +49,16 @@
 
         /* Usage of nth-child(odd) */
         li:nth-child(odd) {
-            background-color : cyan;
+            background-color: cyan;
         }
+
         /* Usage of nth-child(even) */
         li:nth-child(even) {
-            background-color : greenyellow;
+            background-color: greenyellow;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>
@@ -66,7 +72,7 @@
             <input type="email" placeholder="Exter your E-Mail ID">
             <input type="password" placeholder="Exter your Password">
             <input type="submit" value="Submit">
-            
+
         </form>
         <ul>
             <li class="item" id="item-1">Item 1</li>
@@ -78,4 +84,5 @@
         </ul>
     </div>
 </body>
+
 </html>
