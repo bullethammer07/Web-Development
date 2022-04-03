@@ -203,3 +203,44 @@ Video 30 : https://www.youtube.com/watch?v=WTz4A8IdeEQ&list=PLu0W_9lII9agiCUZYRs
             @media only screen and (<Situation to check for true>) {
 
             }
+
+Video 31 : https://www.youtube.com/watch?v=WwUM7qOimbo&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=31 [tutorial31_more_on_selectors.html]
+    The most simple selectors we have seen are
+        select by direct name, for eg :
+            div {
+
+            }
+        
+        select by id, for eg :
+            #id1 {
+
+            }
+        
+        select by class, for eg :
+            .class1 {
+
+            }
+
+        We could also club multiple selectors by specifiying them together with comma between them, for eg :
+            #id1 , #id2 { // This selects attributes for both 'id1' and 'id2'
+
+            }
+
+    Besides the above mentioned selectors, we also have a few other advanced selectors :
+        1. To select a particular element inside any depth from another element (By providing only space between the selectors) :
+            div p { // This selects element 'p' which can be of any depth inside 'div' element
+                     // In the code it is P1 and P2.
+
+            }
+
+            NOTE : This can be clubbed with multiple items
+                for eg :
+                    div li p { // This infers that : 'p' inside any hierarchy inside 'li', which itself could be any hierarchy deep inside 'div'
+
+                    }
+
+        2. To select a particular element directly inside (Direct Child) another lement (By providing '>' symbol between them)
+            div > #p2 { // This selects element with id 'p2' which is directly inside 'div', without any hierarchy in between.
+                        // Which here is P4
+
+            }

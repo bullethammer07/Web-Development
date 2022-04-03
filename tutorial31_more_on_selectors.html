@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+</head>
+
+<style>
+    h1 {
+        background-color : red;
+        color : black;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    div p { /* There must be a p inside 'div', irrespective of hierarchy in between */
+        background-color : greenyellow;
+        color: yellow;
+    }
+
+    div #p2 { /* There must be a p inside 'div', irrespective of hierarchy in between */
+        background-color : blueviolet;
+        color: white;
+    }
+
+    #sib_1 + #sib_2 { /* element whose direct before sibling is element with is = 'sib_1', which here is 'p' with id = 'sib_2' */
+        background-color : cyan;
+    }
+</style>
+
+<body>
+    <h1>This is more on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <!-- P1 -->
+            <p>This is a paragraph inside container -> row</p> 
+        </div>
+        <!-- P2 -->
+        <p>This is a paragraph inside container</p>
+
+        <!-- P4 -->
+        <p id="p2">This is paragraph with id=p2</p>
+    </div>
+
+    <!-- P3 -->
+    <p>This is paragraph inside body</p>
+
+    <!-- P5 -->
+    <p id="sib_1">Paragaph with is = sib_1</p>
+    <!-- P6 -->
+    <p id="sib_2">Paragaph with is = sib_2</p>
+    
+</body>
+</html>
