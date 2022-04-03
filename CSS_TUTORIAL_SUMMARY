@@ -133,10 +133,32 @@ Video 28 : https://www.youtube.com/watch?v=Uzuq2FGxgK4&list=PLu0W_9lII9agiCUZYRs
         align-self : <flex-start | flex-center | flex-end>;
             aligns the item at the start, center or end of the flex item respectively as per the value passed.
 
-Video 29 : https://www.youtube.com/watch?v=Uzuq2FGxgK4&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=29 [tutorial29_responsive_design.html]
+Video 29 : https://www.youtube.com/watch?v=Uzuq2FGxgK4&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=29 [tutorial29_responsive_design.html & tutorial29_2_viewport_height_and_width.html] 
     * Various ways to achieve responsive design
-        1. setting up the viewport
+        1. setting up the viewport (The HTML Boilerplate supports by default)
         2. use max-width/max-height
         3. Using CSS Media Queries : Add On designing which we give to certain special elements, whenever the screen resizes.
                                     i.e new CSS is injected whenever the screen resizes.
-        Using rem/vh/vw units over pixels
+        4. Using rem/vh/vw units over pixels.
+
+        em units : usage -> "font-size : 12em;"
+            Sets the font size relative to the parent container.
+            for eg : If  we set the font size for the parent "container" as 10px, and then we set the font size for id "first" as 10em, then the font size for id "first" is 10 times
+                     10px which is 100px
+            NOTE : 'em' is used when, you want the child elements to be resized when the parent element is resized.
+
+        rem units : usage -> "font-size : 12rem;"
+            Sets the font size relative to the base <html> container.
+
+        Link to better understanding 'em' and 'rem' : https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984
+
+        'vh' and 'vw' (Viewport Height and Viewport Width)
+            Assume we want to set the width and height of the container. We can usually do that using the 'width' and 'height' attributre for that container like below (Standard approach) :   
+                width : 23px;
+                height : 300px;
+
+            In web development, there are many time we want the height of the page to adjust accordingly, and take the complete height. Instead of manyally adjusting multiple times, we can use 'vh' and 'vw' to set it accordingly in percentage to the viewport height and wigth.
+
+            for eg.
+                100vh : means 100% of the viewport height.
+                80vw  : means 80% of the viewport width.
