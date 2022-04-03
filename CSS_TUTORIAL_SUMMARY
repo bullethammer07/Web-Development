@@ -331,5 +331,26 @@ Video 34 : https://www.youtube.com/watch?v=P-hZDC5YkJE&list=PLu0W_9lII9agiCUZYRs
         
         Similar to box-shadow, we can also use blur radius for text-shadow as well.
 
+Video 35 : https://www.youtube.com/watch?v=P-hZDC5YkJE&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=35 [tutorial35_css_variables_and_custom_properties.html]
+    We can create variables inside the list of attributes for an element using the '--' keywords
+    for eg:
+        We can create a varaible that holds color blue like :
+            --color_var : blur;
+        Now this variable can be sourced anywhere inside the attribute list using the var(<variable name>)
+
+        For eg, using this variable to set the background color :
+            background-colr : var(--color_var) ;
+
+        NOTE : The scope of the variables is local to only within the CSS for that element. A variable inside the CSS for one element (say h1) cannot be called or referenced inside the CSS of another element (say body).
+
+        To make variables global so that they can be referenced anywhere inside the CSS of any of the elements, it is best to declare them under 'root'
+            Usage :
+
+                :root {
+                    /* Declare all global variables here */
+                    --glbl_var_1 : blue;
+                    --glbl_var_2 : green;
+                }
+
 
 
