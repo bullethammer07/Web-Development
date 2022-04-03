@@ -283,7 +283,7 @@ Video 32 : https://www.youtube.com/watch?v=P-hZDC5YkJE&list=PLu0W_9lII9agiCUZYRs
 
                 }
 
-Video 32 : https://www.youtube.com/watch?v=P-hZDC5YkJE&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=33 [tutorial33_before_and_after_pseudo_selectors.html]
+Video 33 : https://www.youtube.com/watch?v=P-hZDC5YkJE&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=33 [tutorial33_before_and_after_pseudo_selectors.html]
     In the code, what if we wish to insert some content after <section> ?.
 
     One way to do this is usual way of editing the file and add content after it.
@@ -294,6 +294,42 @@ Video 32 : https://www.youtube.com/watch?v=P-hZDC5YkJE&list=PLu0W_9lII9agiCUZYRs
         section::before {
             content : "This is some random content"
         }
+    Usage for 'after' pseudo selector :
+        Here the 'content' attribute will be inserted before the <section>
+        section::after {
+            content : "This is some random content"
+        }
+
+Video 34 : https://www.youtube.com/watch?v=P-hZDC5YkJE&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=34 [tutorial34_box_and_text_shadow.html]
+    box-shadow attribute usage :
+        box-shadow : <x offset> <y offset> <color>;
+        eg:
+            box-shadow : 12px 12px green;
+        By default, box shadow is on the right and bottom. To bring it up and to the left you can use -ve values of x and y offsets
+        eg 
+            box-shadow : -12px -12px green;
+
+        One another parameter we can provide to the box-shadow is the blur radius
+        Usage :
+            box-shadow : <x offset> <y offset> <blur radius> <color>;
+            eg 
+                box-shadow : -12px -12px 3px green;
+        
+        One another parameter we can provide to the box-shadow is the spread radius
+        Usage :
+            box-shadow : <x offset> <y offset> <blur radius> <spread radius> <color>;
+            eg 
+                box-shadow : -12px -12px 3px 10px green;
+
+    text-shadow attribute usage :
+        text-shadow : <x offset> <y offset> <color>;
+        eg:
+            text-shadow : 12px 12px green;
+        By default, box shadow is on the right and bottom. To bring it up and to the left you can use -ve values of x and y offsets
+        eg 
+            text-shadow : -12px -12px green;
+        
+        Similar to box-shadow, we can also use blur radius for text-shadow as well.
 
 
 
