@@ -283,4 +283,17 @@ Video 32 : https://www.youtube.com/watch?v=P-hZDC5YkJE&list=PLu0W_9lII9agiCUZYRs
 
                 }
 
+Video 32 : https://www.youtube.com/watch?v=P-hZDC5YkJE&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=33 [tutorial33_before_and_after_pseudo_selectors.html]
+    In the code, what if we wish to insert some content after <section> ?.
+
+    One way to do this is usual way of editing the file and add content after it.
+    Another way is to use 'before' and 'after' pseudo selectors :
+
+    Usage for 'before' pseudo selector :
+        Here the 'content' attribute will be inserted before the <section>
+        section::before {
+            content : "This is some random content"
+        }
+
+
 
