@@ -409,3 +409,40 @@ Video 37 : https://www.youtube.com/watch?v=P-hZDC5YkJE&list=PLu0W_9lII9agiCUZYRs
         transition : <transition-property> <transition-duration> <transition-timing-function> <animation-delay> ;
 
         NOTE : We can emntion the transition-property as 'all' so hat all the properties for that element are transitioned.
+
+Video 38 : https://www.youtube.com/watch?v=P-hZDC5YkJE&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=38 [tutorial38_css_tranform.html]
+    Transform is used to alter or change the original shape/size or properties of an element.
+    Usage :
+        transform : <transform attributes>;
+        
+        Some transform attributes :
+            none	                Defines that there should be no transformation	
+            matrix(n,n,n,n,n,n)	    Defines a 2D transformation, using a matrix of six values	
+            matrix3d
+            (n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)	Defines a 3D transformation, using a 4x4 matrix of 16 values	
+            
+            translate(x,y)	        Defines a 2D translation	
+            translate3d(x,y,z)	    Defines a 3D translation	
+            translateX(x)	        Defines a translation, using only the value for the X-axis	
+            translateY(y)	        Defines a translation, using only the value for the Y-axis	
+            translateZ(z)	        Defines a 3D translation, using only the value for the Z-axis	
+            scale(x,y)	            Defines a 2D scale transformation	
+            scale3d(x,y,z)	        Defines a 3D scale transformation	
+            scaleX(x)	            Defines a scale transformation by giving a value for the X-axis	
+            scaleY(y)	            Defines a scale transformation by giving a value for the Y-axis	
+            scaleZ(z)	            Defines a 3D scale transformation by giving a value for the Z-axis	
+            rotate(angle)	        Defines a 2D rotation, the angle is specified in the parameter	
+            rotate3d(x,y,z,angle)	Defines a 3D rotation	
+            rotateX(angle)	        Defines a 3D rotation along the X-axis	
+            rotateY(angle)	        Defines a 3D rotation along the Y-axis	
+            rotateZ(angle)	        Defines a 3D rotation along the Z-axis	
+            skew(x-angle,y-angle)	Defines a 2D skew transformation along the X- and the Y-axis	
+            skewX(angle)	        Defines a 2D skew transformation along the X-axis	
+            skewY(angle)	        Defines a 2D skew transformation along the Y-axis	
+            perspective(n)	        Defines a perspective view for a 3D transformed element	
+            initial	                Sets this property to its default value. Read about initial	
+            inherit	                Inherits this property from its parent element. Read about inherit
+
+            For example, in the code we have used the rotate transformation for 'box' to flip it 45 degrees
+
+    The real fun and usage of Transform with Transitions.
