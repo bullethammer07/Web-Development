@@ -352,5 +352,40 @@ Video 35 : https://www.youtube.com/watch?v=P-hZDC5YkJE&list=PLu0W_9lII9agiCUZYRs
                     --glbl_var_2 : green;
                 }
 
+Video 36 : https://www.youtube.com/watch?v=P-hZDC5YkJE&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=36 [tutorial36_animations_and_keyframes.html]
+    1. To make an animation, we first have to set the "animation-name" property. This can be set to any arbitrary name.
+    2. Next property we have is "animation-duration". This basically tells for how long the animation will run.
+    3. Next property we have is "animation-iteration-count". This basically tells for how many times the animation will repeat.
+       We can also use the value 'infinite' for this attribute to make the animation run infinitely.
 
+    4. To make the animation we have to first add the keyframe for that animation using the animation-name chosed.
+        Syntax :
+            @keyframes <animation-name chosen> { // This syntax uses the 'from' and 'to' approach
+                from {
+
+                }
+                to {
+
+                }
+            }
+
+    5. Another property we have is 'animation-fill-mode'. This makes the animation stop and stay at the last frame when the animation finishes, if its value is kept 'forwards'
+                                                          This also makes the animation stop and stay at the first frame when the animation finishes, if its value is kept 'alternate'
+    6. Another property we have is 'animation-timing-function', with below values :
+        ease-in     : Slows down the start of the animation
+        ease-out    : Slows down the end of the animation
+        ease-in_out : Slows down the start and end of the animation
+    6. Another property we have is 'animation-delay'.
+       This makes the animation start after the specified delay.
+        Usage :
+            animation-delay : <time>;
+            eg:
+                animation-delay : 3s;
+    7. Another property we have is 'animation-direction'
+
+    Another way of creating animation keyframes, is to use the %age of the animation duration instead of the 'from' and 'to'.
+    For eg : Refer to code section
+
+    8. All the entire attributes above can be specified using a shorthand, using :
+        animation : <animation-name> <animation-duration> <animation-timing-function> <animation-delay> <animation-iteration-count> <animation-fill-mode> ;
 
