@@ -389,3 +389,23 @@ Video 36 : https://www.youtube.com/watch?v=P-hZDC5YkJE&list=PLu0W_9lII9agiCUZYRs
     8. All the entire attributes above can be specified using a shorthand, using :
         animation : <animation-name> <animation-duration> <animation-timing-function> <animation-delay> <animation-iteration-count> <animation-fill-mode> ;
 
+Video 37 : https://www.youtube.com/watch?v=P-hZDC5YkJE&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=37 [tutorial37_css_transitions.html]
+    1. To make a transition, we first have to set the 'transition-property'. This has to be set to the attribute that you wish will transition.
+        eg :
+            transition-property : background-color; // This will make the background color transition
+    2. Next property we have is "transition-duration". This basically tells for how long the transition will run.
+    3. Another property we have is 'transition-timing-function', with below values :
+        ease-in     : Slows down the start of the transition
+        ease-out    : Slows down the end of the transition
+        ease-in_out : Slows down the start and end of the transition
+    4. Another property we have is 'transition-delay'.
+       This makes the animation start after the specified delay.
+        Usage :
+            transition-delay : <time>;
+            eg:
+                transition-delay : 3s;
+
+    5. All the entire attributes above can be specified using a shorthand, using :
+        transition : <transition-property> <transition-duration> <transition-timing-function> <animation-delay> ;
+
+        NOTE : We can emntion the transition-property as 'all' so hat all the properties for that element are transitioned.
