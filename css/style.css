@@ -1,0 +1,145 @@
+/* CSS Reset  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Make common CSS variables  */
+:root {
+    --navbar-height : 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display : flex;
+    align-items: center;
+    position : relative;
+    top : 0px;
+}
+
+/* Logo and Image */
+#logo {
+    margin : 10px 34px;
+}
+
+#logo img {
+    height: 59px;
+    margin : 3px 6px;
+}
+
+/* List Styling */
+#navbar ul {
+    display : flex;
+    font-family: 'Roboto', sans-serif;
+}
+#navbar::before {
+    content : "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color : white;
+    display : block;
+    padding : 3px 22px;
+    border-radius: 20px;
+    text-decoration : none;
+}
+
+#navbar ul li a:hover {
+    color : black;
+    background-color: white;
+    display : block;
+    padding : 3px 22px;
+    border-radius: 20px;
+    text-decoration : none;
+}
+
+/* Home Section */
+#home {
+    display : flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content : center;
+    align-items : center;
+    height: 505px;
+}
+
+#home::before {
+    content : "";
+    background : url('/img/food_bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1 {
+    color : white;
+    text-align : center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home p {
+    color : white;
+    text-align : center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Services Section */
+#services {
+    margin : 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding : 34px;
+    margin : 3px 6px;
+    border-radius : 30px;
+    background : cyan;
+}
+
+#services .box img{
+    height: 150px;
+    margin : auto;
+    display : block;
+}
+
+
+/* Utility Classes */
+.h-primary {
+    font-size : 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size : 2.8rem;
+    padding: 12px;
+}
+
+.btn {
+    padding : 6px 20px;
+    border : 2px solid white;
+    background-color : greenyellow;
+    color: black;
+    margin: 17px;
+    font-size : 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
