@@ -498,6 +498,46 @@ Video 41 : https://www.youtube.com/watch?v=8KVrdL0VcAk&list=PLu0W_9lII9agiCUZYRs
     Usage : (same as grid-template-columns)
         grid-template-rows : <width of col1> <width of col2> <width of col3> ........ <width of col n>;
 
+    Only the width for the rows specifed the effect takes place. The remaining all stay default if not specified.
+        for eg, by specifying :
+            grid-template-rows : 1px 3px 2px;
+
+            only the firxt second and third row take the effect, the rest all remaining rows stay default.
+
+    If we want the remaining rows (whose widths are not specified), all to assume some common width, then we can use :
+        'grid-auto-rows'
+
+        Usage :
+            grid-auto-rows : <width>;
+
+    We can use 'grid-template-columns' and 'grid-template-rows' in conjunction to create custom grids.
+
+Video 42 : https://www.youtube.com/watch?v=8KVrdL0VcAk&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=41 [tutorial42_grid_spanning_in_rows_and_columns.html]
+    We can specify the grid gaps separately between rows and columns using :
+        grid-column-gap
+            NOTE : This propertey is now obsolete ... instead use 'column-gap'
+        grid-row-gap
+            NOTE : This propertey is now obsolete ... instead use 'row-gap'
+
+    Lets say we want to merge the top left 4 boxes.
+    To understand this, refer to figure : img\css_grid_lines.png
+
+    CSS name's the spacing between the grid items as 'lines'.
+    The lines start with 1 and go till (rows + 1) and (columns + 1)
+
+        To span multiple row items, we can use the properties :
+            grid-row-start and grid-row-end
+        To span multiple column items, we can use the properties :
+            grid-column-start and grid-column-end
+
+        Usage shown in code
+
+        Shorthand Usage :
+            grid-column : <start from> / span <how many grid items>;
+                eg : 
+                    grid-column : 1 / span 3;
+                    same for grid row
+                    grid-row : 1 / span 3;
 
 
 
@@ -506,4 +546,4 @@ Video 41 : https://www.youtube.com/watch?v=8KVrdL0VcAk&list=PLu0W_9lII9agiCUZYRs
 
 
 
-        
+
