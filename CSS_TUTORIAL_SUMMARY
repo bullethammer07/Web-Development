@@ -448,3 +448,10 @@ Video 38 : https://www.youtube.com/watch?v=P-hZDC5YkJE&list=PLu0W_9lII9agiCUZYRs
     The real fun and usage of Transform with Transitions.
 
 Video 39 : https://www.youtube.com/watch?v=8KVrdL0VcAk&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=39 [tutorial39_first_fully_responsive_website.html]
+    Part of making the webiste responsive starts at timestamp 1:14
+
+    For making the website responsive we inject another CSS using media queries.
+    for eg : here we make a CSS file called 'phone.css'
+        for this we have triggered the CSS usning the 'media' attribute while linking the style sheet
+        usage : media="screen and (max-width : 1170px)
+            Here the CSS will be injected when the max-width is 1170px, beyond that the CSS will be inactive
