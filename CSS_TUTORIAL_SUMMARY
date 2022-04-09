@@ -512,7 +512,7 @@ Video 41 : https://www.youtube.com/watch?v=8KVrdL0VcAk&list=PLu0W_9lII9agiCUZYRs
 
     We can use 'grid-template-columns' and 'grid-template-rows' in conjunction to create custom grids.
 
-Video 42 : https://www.youtube.com/watch?v=8KVrdL0VcAk&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=41 [tutorial42_grid_spanning_in_rows_and_columns.html]
+Video 42 : https://www.youtube.com/watch?v=8KVrdL0VcAk&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=42 [tutorial42_grid_spanning_in_rows_and_columns.html]
     We can specify the grid gaps separately between rows and columns using :
         grid-column-gap
             NOTE : This propertey is now obsolete ... instead use 'column-gap'
@@ -538,6 +538,19 @@ Video 42 : https://www.youtube.com/watch?v=8KVrdL0VcAk&list=PLu0W_9lII9agiCUZYRs
                     grid-column : 1 / span 3;
                     same for grid row
                     grid-row : 1 / span 3;
+
+Video 43 : https://www.youtube.com/watch?v=8KVrdL0VcAk&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=43 [tutorial43_css_grid_autofit_min_max.html]
+    What if we want to make the content inside the grid items into the center ?.
+        For this we can use :
+            align-items : center;
+            justify-content : center;
+        inside the container CSS;
+
+    What if we wish to make the grid responsive ?
+        for this we can use :
+            grid-template-column : repeat(autofit, minmax(<minimum width>, <maximum width>))
+                for eg :
+                    grid-template-column : repeat(auto-fit, minmax(400px, 1fr));
 
 
 
