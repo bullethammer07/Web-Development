@@ -492,3 +492,18 @@ Video 40 : https://www.youtube.com/watch?v=8KVrdL0VcAk&list=PLu0W_9lII9agiCUZYRs
 
     We can use the 'grid-gap' attribute to set the spaces between the grid items.
         For eg : grid-gap of 2rem is used for 'container' in code.
+
+Video 41 : https://www.youtube.com/watch?v=8KVrdL0VcAk&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=41 [tutorial41_css_grids2.html]
+    Apart from 'grid-template-column', we also have a similar attribute in CSS called 'grid-templeate-rows'
+    Usage : (same as grid-template-columns)
+        grid-template-rows : <width of col1> <width of col2> <width of col3> ........ <width of col n>;
+
+
+
+
+
+
+
+
+
+        
