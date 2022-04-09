@@ -460,3 +460,35 @@ Video 39 : https://www.youtube.com/watch?v=8KVrdL0VcAk&list=PLu0W_9lII9agiCUZYRs
         html {
             scroll-behavior : smooth;
         }
+
+Video 40 : https://www.youtube.com/watch?v=8KVrdL0VcAk&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=40 [tutorial40_css_grids.html]
+    Gid for a container can be set by keeping the display property as 'grid'
+        For eg : In the code
+            .container {
+                display : grid;
+            }
+
+        NOTE : In the above code, 'container' becomes the grid and all the childs inside 'container' become the grid items.
+
+    To make columns in a grid for a 'container', we use the attribute 'grid-template-colums' (as used in code)
+        Usage : For n columns we use
+            grid-template-columns : <width of col1> <width of col2> <width of col3> ........ <width of col n>;
+        eg (in code we have made 3 columns each of 100px width)
+            grid-template-columns : 100px 100px 100px ;
+
+        NOTE : we can also keep the widths as 'auto'
+        eg :
+            grid-template-columns : 100px 100px auto ;
+
+    We can also use 'fr' indexes instead of 'px' of specifying widths.
+        eg :
+            grid-template-columns : 1fr 3fr 2fr ;
+            This splits the space available to the grid into the sum of all 'fr' (here : 1+3+2 = 6).
+            the fr specify the ratio in which the width is split.
+            The higher fr value gets more width.
+
+    Lets say there is a situation where we have a large number of columns. In such a case it will become tedius to specify the widths of each and individual column.
+    In such a scenaario, we can choose to use the repeat function to specify a width a repeated number of times.
+
+    We can use the 'grid-gap' attribute to set the spaces between the grid items.
+        For eg : grid-gap of 2rem is used for 'container' in code.
