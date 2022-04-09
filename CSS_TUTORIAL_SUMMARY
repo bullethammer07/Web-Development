@@ -455,3 +455,8 @@ Video 39 : https://www.youtube.com/watch?v=8KVrdL0VcAk&list=PLu0W_9lII9agiCUZYRs
         for this we have triggered the CSS usning the 'media' attribute while linking the style sheet
         usage : media="screen and (max-width : 1170px)
             Here the CSS will be injected when the max-width is 1170px, beyond that the CSS will be inactive
+
+    For smooth scrolling of your website  add below to CSS :
+        html {
+            scroll-behavior : smooth;
+        }

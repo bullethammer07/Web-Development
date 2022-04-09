@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Make common CSS variables  */
 :root {
     --navbar-height : 59px;
@@ -13,7 +17,7 @@
 #navbar {
     display : flex;
     align-items: center;
-    position : relative;
+    position : sticky;
     top : 0px;
 }
 
