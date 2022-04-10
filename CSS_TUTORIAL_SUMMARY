@@ -552,6 +552,32 @@ Video 43 : https://www.youtube.com/watch?v=8KVrdL0VcAk&list=PLu0W_9lII9agiCUZYRs
                 for eg :
                     grid-template-column : repeat(auto-fit, minmax(400px, 1fr));
 
+Video 44 : https://www.youtube.com/watch?v=8KVrdL0VcAk&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=44 [tutorial44_layout_using_grid_template_area.html]
+    Another way of making grids is by using 'grid-template-areas'
+
+    In this method we give the grid items that we want to span some unique id names using the keyword 'grid-area'
+    For eg :
+        All the grid itmes that we want spanned for the navbar, will need to have a common 'grid-area' name
+        This can be done by assigning all those grid items a common ID
+        and then set the'grid-area' attribute for that ID 
+
+        as shown in code:
+        'grid-area' attribute has been set as a unique name 'sec_bar_id' for ID 'section'
+
+    Similar approach is followed for all grid items to be clubbed.
+
+    Then in the container where all the grid items are present, we specify the grid spanning by providing the unique id's given for the span.
+    For  eg :
+        In the code :
+        The 'grid-template-areas' is set to be a 4x4 grid.
+
+        The first row of the grid has all the grid-items spanned together, by specifying the common unique id name 'navbar' across all 4 columns
+            like : 'navbar navbar navbar navbar'
+
+        In a similar way only the first 3 columns of the grid items are spanned together by using the unique id name 'sec_bar_id' which was giver for the ID 'section'
+        The last column remaining is the 'aside_bar_id'
+
+    NOTE : Each row in the 'grid-layout-areas' must have the same number of columns.
 
 
 

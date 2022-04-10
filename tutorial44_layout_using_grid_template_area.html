@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating layouts using Grid Template Area</title>
+
+    <style>
+        .container {
+            display : grid;
+            row-gap: 1rem;
+            column-gap: 1rem;
+
+            grid-template-areas: 
+            'navbar     navbar     navbar     navbar'
+            'sec_bar_id sec_bar_id sec_bar_id aside_bar_id'
+            'btm_lft    btm_lft    btm_rt     btm_rt'
+            'footer     footer     footer     footer'
+            ;
+
+        }
+
+        .item {
+            background-color: yellow;
+            border: 3px solid black;
+        }
+
+        .navbar {
+            background-color : cyan;
+            border : 2px solid black;
+            padding : 20px;
+
+            grid-area : navbar;
+            height: 200px;
+        }
+
+        .bord_rad5 {
+            border-radius: 10px;
+        }
+
+        #section {
+            grid-area: sec_bar_id;
+            background-color : greenyellow;
+            padding : 20px;
+        }
+        
+        #aside {
+            grid-area: aside_bar_id;
+            background-color :blueviolet
+        }
+        
+        #bottom-left {
+            grid-area : btm_lft;
+            background-color :brown;
+            padding : 20px;
+        }
+        #bottom-right {
+            grid-area : btm_rt;
+            background-color :palegreen;
+            padding : 20px;
+        }
+        
+        #footer {
+            grid-area : footer;
+            background-color : gray;
+            padding : 20px;
+
+            height: 200px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar bord_rad5" id="item">This is Navbar</div>
+        <div class="navbar bord_rad5" id="item">This is Navbar</div>
+        <div class="navbar bord_rad5" id="item">This is Navbar</div>
+        <div class="navbar bord_rad5" id="item">This is Navbar</div>
+
+        <div class="item bord_rad5" id="section">Section Item - 1</div>
+        <div class="item bord_rad5" id="section">Section Item - 2</div>
+        <div class="item bord_rad5" id="section">Section Item - 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perferendis ullam consectetur quasi quis aperiam suscipit sed nihil officiis quod ea commodi laborum, voluptates, sapiente quidem quos eveniet dicta, dignissimos nam provident at? Harum, porro! Nesciunt est minima, dolorum accusantium facere eveniet molestiae minus omnis, a necessitatibus maiores ab ullam?</div>
+        
+        <div class="item bord_rad5" id="aside">Item - 4</div>
+        
+        <div class="item bord_rad5" id="bottom-left">Item - 5</div>
+        <div class="item bord_rad5" id="bottom-left">Item - 6</div>
+        <div class="item bord_rad5" id="bottom-left">Item - 9</div>
+        <div class="item bord_rad5" id="bottom-left">Item - 10</div>
+        
+        <div class="item bord_rad5" id="bottom-right">Item - 7</div>
+        <div class="item bord_rad5" id="bottom-right">Item - 8</div>
+        <div class="item bord_rad5" id="bottom-right">Item - 11</div>
+        <div class="item bord_rad5" id="bottom-right">Item - 12</div>
+ 
+        <div class="item bord_rad5" id="footer">Item - 13</div>
+        <div class="item bord_rad5" id="footer">Item - 14</div>
+        <div class="item bord_rad5" id="footer">Item - 15</div>
+        <div class="item bord_rad5" id="footer">Item - 16</div>
+    </div>
+</body>
+</html>
