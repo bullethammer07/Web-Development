@@ -579,6 +579,8 @@ Video 44 : https://www.youtube.com/watch?v=8KVrdL0VcAk&list=PLu0W_9lII9agiCUZYRs
 
     NOTE : Each row in the 'grid-layout-areas' must have the same number of columns.
 
+    IMPT : You can club grids with media queries to make responsive web pages.
+
 
 
 

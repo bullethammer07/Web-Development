@@ -1,0 +1,46 @@
+---------------------------------------------------------------------------------------------------------------------
+                                        Introduction to Javascript
+---------------------------------------------------------------------------------------------------------------------
+
+
+ --> What can JS Do ?.
+
+1. JS can execute not only on browser, but also on the server.
+2. We can use JS as a client side as well as a server side language.
+3. JS has eveolved over the years nad can be used for other tasks besides a web based scripting language.
+    Used in : Mobile applications. Games etc.
+
+NOTE : JS must be a safe language, i.e. it must not have any permission to execute or change low level CPU or Memory.
+       As this can allow hackers or external agents to take control over your system.
+
+--> In Web Development is used for :
+
+1. Add new HTML and change existing HTML from DOM (Document Object Model).
+2. React to Events. (An Event is basically any action that comes to a browser)
+    like :
+        response from server
+        key presses
+        mouse movements
+3. AJAX (Asynchronous JS and XML) requests.
+4. Get and Set cookies.
+5. Use local storage (Small storage JS uses to store user inputs and preferences).
+
+--> What In-Browser JS Cannot do :
+1. Read/Write To/From computer Harddisk (Without User Permission).
+    NOTE : This has limitations as well as exceptions.
+
+--> What makes JS unique ?.
+1. It has full support inbuilt for HTML/CSS.
+2. Simple API's for simple things.
+3. Supports all major modern browsers, and are enabled by default.
+
+Video 47 : https://www.youtube.com/watch?v=ArUL-He_AN0&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=47 [tutorial47_js_and_developer_console.html]
+    It is best preferable to keep your JS after body so that your DOM loads completely before your JS loads.
+
+    To print message in your JS file we can use console.log(" Your msg here");
+    Go to 'Console' in the Inspect Element window of your browser to view the console messages.
+
+Video 48 : https://www.youtube.com/watch?v=ArUL-He_AN0&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=48 [tutorial48_js_variables_datatypes_and_operators.html]
+
+
+
